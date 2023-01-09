@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="row">
+      <div class="column">
+        <div class="logo-contain">
+          <a href="https://www.kredete.com">
+            <div class="brand">
+{#              <img src="../Kredete Login Page /images/Kredete Logos_Logo.png" alt="" width="50%" height="50%">#}
+                <img src="{% static 'images/Kredete Logos_Logo.png' %}" alt="" width="50%" height="50%">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column1">
+        <ul id="menuList">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+    <div class="k-section1">
+      <div class="row2">
+        <div class="column">
+        </div>
+        <div class="column">
+          <div class="f-container">
+            <h1 class="form-header">Create Account</h1>
+            <p class="small-text">Get access to tools to better manage your credit</p>
+            <form class="form-c" action="index.html" method="post">
+              <label for= "email" class="labelled" >
+                First Name
+              </label>
+              <br>
+              <input type="text" class="input" name="text" value="" maxlength="256" placeholder="Enter first name" data-name = "Email" id="email" required>
+              <br>
+              <label for= "email" class="labelled" >
+               Last Name
+              </label>
+              <br>
+              <input type="text" class="input" name="text" value="" maxlength="256" placeholder="Enter last name" data-name = "Email" id="email" required>
+              <br>
+              <label for= "email" class="labelled" >
+                Email address
+              </label>
+              <br>
+              <input type="email" class="input" name="email" value="" maxlength="256" placeholder="Enter email address" data-name = "Email" id="email" required>
+              <br>
+              <label for= "password" class="labelled" >
+                Password
+              </label>
+              <br>
+              <input type="password" class="input" placeholder="Enter Password" id="password" required>
+              <!-- <i class="fa-solid fa-eye" id="eye" style=" margin-left: 30px; cursor: pointer;"></i> -->
+              <p class="password-desc">Password should be made up of alphabets and  numbers of 8 characters <br> (Acceptable character are A-Z a-z 1-9 ! @ # $ *) </br>
+              </p>
+             <br>
+             <div class="terms-condition"> <input type="checkbox"/><span class="check">By checking this box you agree to the <strong>Terms & Conditions </strong> of <br>Kredete</br></span></div>
+            </form>
+            <button type="submit" class="submit-btn">Sign Up </button>
+            <p class="enquiry">Already have an account? <a href="Login.html"class="frm-lnk"> Login </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
