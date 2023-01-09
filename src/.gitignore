@@ -151,3 +151,16 @@ keys/
 
 staticfiles/
 static/
+
+# environment variables
+.env/base
+.env/prod
+.env/dev
+
+# docker files
+Dockerfile
+docker-compose.yml
+
+# keys
+oidc.key
+oidc.pub
